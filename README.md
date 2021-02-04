@@ -6,18 +6,18 @@ Implementation of trRosetta and trDesign for Pytorch, made into a convenient pac
 
 ```bibtex
 @article {Yang1496,
-	author = {Yang, Jianyi and Anishchenko, Ivan and Park, Hahnbeom and Peng, Zhenling and Ovchinnikov, Sergey and Baker, David},
-	title = {Improved protein structure prediction using predicted interresidue orientations},
-	volume = {117},
-	number = {3},
-	pages = {1496--1503},
-	year = {2020},
-	doi = {10.1073/pnas.1914677117},
-	publisher = {National Academy of Sciences},
-	issn = {0027-8424},
-	URL = {https://www.pnas.org/content/117/3/1496},
-	eprint = {https://www.pnas.org/content/117/3/1496.full.pdf},
-	journal = {Proceedings of the National Academy of Sciences}
+    author = {Yang, Jianyi and Anishchenko, Ivan and Park, Hahnbeom and Peng, Zhenling and Ovchinnikov, Sergey and Baker, David},
+    title = {Improved protein structure prediction using predicted interresidue orientations},
+    volume = {117},
+    number = {3},
+    pages = {1496--1503},
+    year = {2020},
+    doi = {10.1073/pnas.1914677117},
+    publisher = {National Academy of Sciences},
+    issn = {0027-8424},
+    URL = {https://www.pnas.org/content/117/3/1496},
+    eprint = {https://www.pnas.org/content/117/3/1496.full.pdf},
+    journal = {Proceedings of the National Academy of Sciences}
 }
 ```
 
