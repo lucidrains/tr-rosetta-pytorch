@@ -1,6 +1,6 @@
 ## trRosetta - Pytorch (wip)
 
-Implementation of trRosetta and trDesign for Pytorch, made into a convenient package, for protein structure prediction and design.
+Implementation of trRosetta and trDesign for Pytorch, made into a convenient package, for protein structure prediction and design. Will also contain an experimental version of trRosetta that uses <a href="https://github.com/lucidrains/bottleneck-transformer-pytorch">Bottleneck Transformers</a>.
 
 ## Citations
 
