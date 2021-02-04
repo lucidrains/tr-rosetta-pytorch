@@ -23,14 +23,14 @@ Implementation of trRosetta and trDesign for Pytorch, made into a convenient pac
 
 ```bibtex
 @article {Anishchenko2020.07.22.211482,
-	author = {Anishchenko, Ivan and Chidyausiku, Tamuka M. and Ovchinnikov, Sergey and Pellock, Samuel J. and Baker, David},
-	title = {De novo protein design by deep network hallucination},
-	elocation-id = {2020.07.22.211482},
-	year = {2020},
-	doi = {10.1101/2020.07.22.211482},
-	publisher = {Cold Spring Harbor Laboratory},
-	URL = {https://www.biorxiv.org/content/early/2020/07/23/2020.07.22.211482},
-	eprint = {https://www.biorxiv.org/content/early/2020/07/23/2020.07.22.211482.full.pdf},
-	journal = {bioRxiv}
+    author = {Anishchenko, Ivan and Chidyausiku, Tamuka M. and Ovchinnikov, Sergey and Pellock, Samuel J. and Baker, David},
+    title = {De novo protein design by deep network hallucination},
+    elocation-id = {2020.07.22.211482},
+    year = {2020},
+    doi = {10.1101/2020.07.22.211482},
+    publisher = {Cold Spring Harbor Laboratory},
+    URL = {https://www.biorxiv.org/content/early/2020/07/23/2020.07.22.211482},
+    eprint = {https://www.biorxiv.org/content/early/2020/07/23/2020.07.22.211482.full.pdf},
+    journal = {bioRxiv}
 }
 ```
