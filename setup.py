@@ -3,6 +3,12 @@ from setuptools import setup, find_packages
 setup(
   name = 'tr-rosetta-pytorch',
   packages = find_packages(),
+  include_package_data = True,
+  entry_points={
+    'console_scripts': [
+      'tr_rosetta = tr_rosetta_pytorch.cli:predict',
+    ],
+  },
   version = '0.0.1',
   license='MIT',
   description = 'trRosetta - Pytorch',
@@ -15,8 +21,10 @@ setup(
     'protein design'
   ],
   install_requires=[
-    'torch>=1.6',
-    'einops>=0.3'
+    'einops>=0.3',
+    'fire',
+    'numpy',
+    'torch>=1.6'
   ],
   classifiers=[
     'Development Status :: 4 - Beta',
