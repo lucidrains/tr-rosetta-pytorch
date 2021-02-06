@@ -1,6 +1,6 @@
 ## trRosetta - Pytorch (wip)
 
-Implementation of trRosetta and trDesign for Pytorch, made into a convenient package, for protein structure prediction and design. Will also contain an experimental version of trRosetta that uses attention. The concept of trDesign will also be applied to <a href="https://github.com/lucidrains/alphafold2">Alphafold2</a> once it is replicated. Please join the efforts if you would like to see this happen!
+Implementation of trRosetta and trDesign for Pytorch, made into a convenient package, for protein structure prediction and design. Will also contain an experimental version of trRosetta that uses attention. The concept of trDesign will also be abstracted into a wrapper in this repository, so that it can be applied to <a href="https://github.com/lucidrains/alphafold2">Alphafold2</a> once it is replicated. Please join the efforts there if you would like to see this happen!
 
 The original repository can be found <a href="https://github.com/gjoni/trRosetta">here</a>
 
