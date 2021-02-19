@@ -44,8 +44,9 @@ def get_ensembled_predictions(input_file, output_file=None, model_dir=DEFAULT_MO
         output = net(i)
         outputs.append(output)
 
-    averaged_outputs = [torch.stack(model_output).mean(dim=0).cpu().numpy() for model_output in zip(*outputs)]
-    output_dict = dict(zip(['dist', 'omega', 'theta', 'phi'], averaged_outputs))
+    averaged_outputs = [torch.stack(model_output).mean(dim=0).cpu().numpy().squeeze(0).transpose(1,2,0) for model_output in zip(*outputs)]
+    # prob_theta, prob_phi, prob_distance, prob_omega
+    output_dict = dict(zip(['theta', 'phi', 'dist', 'omega'], averaged_outputs))
     np.savez_compressed(output_file, **output_dict)
     print(f'predictions for {input_file} saved to {output_file}')
 
