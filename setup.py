@@ -9,7 +9,7 @@ setup(
       'tr_rosetta = tr_rosetta_pytorch.cli:predict',
     ],
   },
-  version = '0.0.1',
+  version = '0.0.2',
   license='MIT',
   description = 'trRosetta - Pytorch',
   author = 'Phil Wang',
