@@ -41,11 +41,11 @@ class trRosettaNetwork(nn.Module):
         self.activate = elu()
 
         # conv to anglegrams and distograms
-        self.to_prob_theta = nn.Sequential(conv2d(filters, 25, 1), nn.Softmax(dim=-1))
-        self.to_prob_phi = nn.Sequential(conv2d(filters, 13, 1), nn.Softmax(dim=-1))
-        self.to_distance = nn.Sequential(conv2d(filters, 37, 1), nn.Softmax(dim=-1))
-        self.to_prob_bb = nn.Sequential(conv2d(filters, 3, 1), nn.Softmax(dim=-1))
-        self.to_prob_omega = nn.Sequential(conv2d(filters, 25, 1), nn.Softmax(dim=-1))
+        self.to_prob_theta = nn.Sequential(conv2d(filters, 25, 1), nn.Softmax(dim=1))
+        self.to_prob_phi = nn.Sequential(conv2d(filters, 13, 1), nn.Softmax(dim=1))
+        self.to_distance = nn.Sequential(conv2d(filters, 37, 1), nn.Softmax(dim=1))
+        self.to_prob_bb = nn.Sequential(conv2d(filters, 3, 1), nn.Softmax(dim=1))
+        self.to_prob_omega = nn.Sequential(conv2d(filters, 25, 1), nn.Softmax(dim=1))
  
     def forward(self, x):
         x = self.first_block(x)
@@ -59,7 +59,7 @@ class trRosettaNetwork(nn.Module):
         x = 0.5 * (x + x.permute((0,1,3,2)))    # symmetrize
 
         prob_distance = self.to_distance(x)     # distograms
-        prob_bb = self.to_prob_bb(x)            # beta-strand pairings (not used)
+        # prob_bb = self.to_prob_bb(x)            # beta-strand pairings (not used)
         prob_omega = self.to_prob_omega(x)      # anglegrams for omega
 
         return prob_theta, prob_phi, prob_distance, prob_omega
