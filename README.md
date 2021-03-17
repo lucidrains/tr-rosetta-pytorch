@@ -2,9 +2,11 @@
 
 ## trRosetta - Pytorch (wip)
 
-Implementation of <a href="https://www.pnas.org/content/117/3/1496">trRosetta</a> and <a href="https://www.biorxiv.org/content/10.1101/2020.07.22.211482v1">trDesign</a> for Pytorch, made into a convenient package, for protein structure prediction and design. Will also contain an experimental version of trRosetta that uses attention. The concept of trDesign will also be abstracted into a wrapper in this repository, so that it can be applied to <a href="https://github.com/lucidrains/alphafold2">Alphafold2</a> once it is replicated. Please join the efforts there if you would like to see this happen!
+Implementation of <a href="https://www.pnas.org/content/117/3/1496">trRosetta</a> and <a href="https://www.biorxiv.org/content/10.1101/2020.07.22.211482v1">trDesign</a> for Pytorch, made into a convenient package, for protein structure prediction and design. The concept of trDesign will also be abstracted into a wrapper in this repository, so that it can be applied to <a href="https://github.com/lucidrains/alphafold2">Alphafold2</a> once it is replicated. Please join the efforts there if you would like to see this happen!
 
 The original repository can be found <a href="https://github.com/gjoni/trRosetta">here</a>
+
+Update - <a href="https://github.com/aixander">Xander</a> has released <a href="https://github.com/Learn-Ventures/trdesign-pytorch">trDesign for Pytorch</a>!
 
 ## Install
 
