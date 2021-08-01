@@ -83,7 +83,7 @@ def preprocess(msa_file, wmin=0.8, ns=21):
 
     # 2d sequence
 
-    f2d_dca = fast_dca(msa1hot, w) if nrow > 1 else torch.zeros((ncol, ncol, 442)).float()
+    f2d_dca = fast_dca(msa1hot, w) if nrow > 1 else torch.zeros((ncol, ncol, 442)).float().to(d())
     f2d_dca = f2d_dca[None, :, :, :]
 
     f2d = torch.cat((
